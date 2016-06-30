@@ -1,0 +1,49 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300italic,300,400italic,700,700italic);
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+header.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: white;
+    box-shadow: 0 5px 5px #eaeaea;
+}
+
+div.content {
+    position: absolute;
+    top: 80px;
+}
+
+div.menu {
+    height: 100%;
+}
+
+div.menu-item {
+    width: 20%;
+    max-width: 200px;
+    min-width: 150px;
+    float: left;
+    height: 100%;
+    line-height: 80px;
+    text-align: center;
+}
+
+div.menu-logo {
+    width: 220px;
+    float: left;
+    height: 100%;
+    line-height: 80px;
+    text-align: center;
+    font-weight: 400;
+    color: #1976D2;
+}
+
+div.menu-item:hover {
+    font-weight: 400;
+    background-color: #F5F5F5;
+}

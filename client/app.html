@@ -1,1 +1,17 @@
-Hello world!
+<header class="fixed">
+    <div class="menu">
+        <div class="menu-logo">Temperature Control</div>
+        <div class="menu-item">Show Measures</div>
+        <div class="menu-item">Add sensor</div>
+        <div class="menu-item">Contact</div>
+    </div>
+</header>
+<div class="content">
+    <ul>
+        <li *ngFor="let sensor of sensors">
+            Name {{sensor.name}}
+            <p>Id: {{sensor._id}}</p>
+            <p>Measures <span *ngFor="let measure of sensor.measures">{{measure.value}} </span></p>
+        </li>
+    </ul>
+</div>
